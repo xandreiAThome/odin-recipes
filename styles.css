@@ -1,6 +1,21 @@
+html {
+    height: 100%;
+}
+
 .mainContainer {
+    height: 100%;
+    /* Needs this margin 0 in the body so that it will not make the  page scrollable when div takes the whole page */
+    margin: 0;
+}
+
+ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f2e1b3;
+}
+
+ol {
+    width: 40%    
 }
