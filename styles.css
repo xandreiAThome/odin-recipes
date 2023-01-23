@@ -1,21 +1,99 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 .mainContainer {
-    height: 100%;
-    /* Needs this margin 0 in the body so that it will not make the  page scrollable when div takes the whole page */
-    margin: 0;
+  height: 100%;
+  /* Needs this margin 0 in the body so that it will not make the  page scrollable when div takes the whole page */
+  margin: 0;
+  overflow-y: hidden;
 }
 
- body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2e1b3;
+body {
+  background-image: linear-gradient(#ffc555, #ffbe73, #df6900);
 }
 
 ol {
-    width: 40%    
+  width: 40%;
+}
+.center-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.site-name {
+  font-family: "EB Garamond", serif;
+  color: #7a5200;
+  margin: 0;
+  font-size: 2.5vw;
+  font-style: italic;
+  opacity: 0%;
+  animation: name-intro 1s ease-in forwards 1s;
+}
+
+@keyframes name-intro {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+.odin-logo {
+  width: 24vw;
+  margin: 0;
+  animation: logo-intro 1s ease-in forwards;
+}
+
+@keyframes logo-intro {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+.adobo-link {
+  margin-top: 10vw;
+  width: 20vw;
+  display: block;
+  text-decoration: none;
+}
+
+.adobo-button {
+  width: 100%;
+  border-radius: 1vw;
+  animation: recipe-intro 1s ease-out forwards 2s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+@keyframes recipe-intro {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recipe-name {
+  color: #7a5200;
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  animation: recipe-name-intro 1s ease-out forwards 3s;
+  transform: translateX(-15%);
+  opacity: 0;
+}
+
+@keyframes recipe-name-intro {
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
