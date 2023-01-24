@@ -23,12 +23,14 @@ ol {
 
 .left-div {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .right-div {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .center-div {
@@ -82,17 +84,25 @@ ol {
   min-width: 100px;
   display: block;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .recipe-button {
   width: 100%;
   border-radius: 16px;
   animation: recipe-intro 1s ease-out forwards 2s;
-  transform: translateY(100%);
   opacity: 0;
 }
 
+.recipe-link:hover {
+  transform: scale(1.05);
+}
+
 @keyframes recipe-intro {
+  0% {
+    transform: translateY(100%);
+  }
+
   100% {
     opacity: 1;
     transform: translateY(0);
