@@ -50,7 +50,7 @@ ol {
 
 @keyframes name-intro {
   0% {
-    transform: translateX(-25%);
+    transform: translateX(20%);
   }
   100% {
     opacity: 100%;
@@ -136,7 +136,7 @@ ol {
 
 @keyframes author {
   0% {
-    transform: translateX(10%);
+    transform: translateX(-10%);
   }
   100% {
     opacity: 1;
