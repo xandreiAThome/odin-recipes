@@ -79,7 +79,7 @@ ol {
 .recipe-link {
   margin-top: 20vh;
   width: 20vw;
-  min-width: 148px;
+  min-width: 100px;
   display: block;
   text-decoration: none;
 }
@@ -102,7 +102,7 @@ ol {
 .recipe-name {
   color: #7a5200;
   font-family: "EB Garamond", serif;
-  font-size: calc(12px + 1vw);
+  font-size: calc(12px + 0.5vw);
   text-align: center;
   animation: recipe-name-intro 1s ease-out forwards 2.8s;
   transform: translateX(-15%);
