@@ -7,15 +7,30 @@ html {
   /* Needs this margin 0 in the body so that it will not make the  page scrollable when div takes the whole page */
   margin: 0;
   overflow-y: hidden;
+  grid-template-columns: 30% 40% 30%;
+  display: grid;
 }
 
 body {
   background-image: linear-gradient(#ffc555, #ffbe73, #df6900);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 ol {
   width: 40%;
 }
+
+.left-div {
+  display: flex;
+  justify-content: center;
+}
+
+.right-div {
+  display: flex;
+  justify-content: center;
+}
+
 .center-div {
   display: flex;
   align-items: center;
@@ -26,7 +41,7 @@ ol {
   font-family: "EB Garamond", serif;
   color: #7a5200;
   margin: 0;
-  font-size: 2.5vw;
+  font-size: calc(12px + 1.5vw);
   font-style: italic;
   opacity: 0%;
   animation: name-intro 1s ease-in forwards 1s;
@@ -44,6 +59,7 @@ ol {
 
 .odin-logo {
   width: 24vw;
+  min-width: 248px;
   margin: 0;
   animation: logo-intro 1s ease-in forwards;
 }
@@ -60,16 +76,17 @@ ol {
   }
 }
 
-.adobo-link {
-  margin-top: 10vw;
+.recipe-link {
+  margin-top: 20vh;
   width: 20vw;
+  min-width: 148px;
   display: block;
   text-decoration: none;
 }
 
-.adobo-button {
+.recipe-button {
   width: 100%;
-  border-radius: 1vw;
+  border-radius: 16px;
   animation: recipe-intro 1s ease-out forwards 2s;
   transform: translateY(100%);
   opacity: 0;
@@ -85,8 +102,9 @@ ol {
 .recipe-name {
   color: #7a5200;
   font-family: "EB Garamond", serif;
+  font-size: calc(12px + 1vw);
   text-align: center;
-  animation: recipe-name-intro 1s ease-out forwards 3s;
+  animation: recipe-name-intro 1s ease-out forwards 2.8s;
   transform: translateX(-15%);
   opacity: 0;
 }
