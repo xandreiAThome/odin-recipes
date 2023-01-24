@@ -153,6 +153,10 @@ html {
 .box-div > h3 {
   font-style: italic;
   font-size: calc(20px + 0.3vw);
+  border-top: 1px solid white;
+  text-align: center;
+  width: 100%;
+  padding-top: 6px;
 }
 
 .box-div {
@@ -207,4 +211,9 @@ html {
 .recipe-img {
   width: 12vw;
   min-width: 128px;
+}
+
+.recipe-title {
+  margin-top: 0;
+  font-size: calc(24px + 1vw);
 }
