@@ -1,5 +1,8 @@
 html {
   height: 100%;
+  background-image: linear-gradient(#fccc6c, #ffa844, #df6900);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .mainContainer {
@@ -7,18 +10,8 @@ html {
   /* Needs this margin 0 in the body so that it will not make the  page scrollable when div takes the whole page */
   margin: 0;
   overflow-y: hidden;
-  grid-template-rows: 20% 80%;
-  display: grid;
-}
-
-body {
-  background-image: linear-gradient(#fccc6c, #ffa844, #df6900);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-ol {
-  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-div {
@@ -33,7 +26,7 @@ ol {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin-top: 1vh;
+  margin-top: calc(25px + 4vw);
 }
 
 .site-name {
@@ -50,7 +43,7 @@ ol {
 
 @keyframes name-intro {
   0% {
-    transform: translateX(20%);
+    transform: translateX(10%);
   }
   100% {
     opacity: 100%;
@@ -142,4 +135,74 @@ ol {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.recipe-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: white;
+}
+
+.box-div > h1 {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+}
+
+.box-div > h3 {
+  font-style: italic;
+  font-size: calc(20px + 0.3vw);
+}
+
+.box-div {
+  width: 40%;
+  min-width: 300px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 4vw 1vw 4vw;
+  margin: 2vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2vw;
+  border-style: groove;
+  animation: recipe-page 1s ease-in forwards;
+  font-size: calc(16px + 0.2vw);
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.steps,
+.ingredients,
+.description {
+  margin: 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.steps > li {
+  margin-bottom: 2vw;
+}
+
+@keyframes recipe-page {
+  100% {
+    opacity: 1;
+  }
+}
+
+.recipe-img {
+  width: 12vw;
+  min-width: 128px;
 }
