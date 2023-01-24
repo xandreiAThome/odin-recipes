@@ -21,12 +21,10 @@ html {
 }
 
 .bottom-div {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin-top: calc(25px + 4vw);
+  justify-items: center;
 }
 
 .site-name {
@@ -72,7 +70,7 @@ html {
 
 .recipe-link {
   width: 20vw;
-  min-width: 100px;
+  min-width: 164px;
   display: block;
   text-decoration: none;
   transition: 0.5s;
