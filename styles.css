@@ -23,7 +23,7 @@ html {
 .bottom-div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  margin-top: calc(25px + 4vw);
+  margin-top: 5vw;
   justify-items: center;
 }
 
