@@ -118,11 +118,15 @@ html {
 .author {
   font-size: calc(6px + 0.5vw);
   font-family: "EB Garamond", serif;
-  color: #7a5200;
   position: absolute;
   top: calc(47px + 3vw);
   animation: author 1s ease-in forwards 1s;
   opacity: 0;
+}
+
+.author > a {
+  text-decoration: none;
+  color: #7a5200;
 }
 
 @keyframes author {
